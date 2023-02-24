@@ -1,0 +1,17 @@
+
+<Started@MDScreen>:
+
+    Image: 
+        source: "assets/images/image.png"
+        pos_hint: {"center_x":.5, "center_y":.65}
+    MagicButton:
+        id: check
+        text: "Get Started"
+        pos_hint: {"center_x":.5, "center_y":.25}
+        size_hint: .66, .065
+        background_color: 0,0,0,0
+        font_name: "BPoppins"
+        on_release:
+            self.wobble()
+            root.manager.transition.direction = "left"
+            root.manager.current = "signup"

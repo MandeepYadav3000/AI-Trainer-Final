@@ -1,0 +1,42 @@
+
+<Body@MDScreen>:
+
+    MDFloatLayout:
+        md_bg_color: 1,1,1,1
+
+        MDTextField:
+            hint_text: "Age"
+            helper_text_mode: "persistent"
+            pos_hint: {"center_x":.47, "center_y":.68}
+            size_hint_x: .7
+
+        MDTextField:
+            hint_text: "Height"
+            helper_text_mode: "persistent"
+            pos_hint: {"center_x":.47, "center_y":.56}
+            size_hint_x: .7
+
+        MDTextField:
+            hint_text: "Weight"
+            helper_text_mode: "persistent"
+            pos_hint: {"center_x":.47, "center_y":.44}
+            size_hint_x: .7
+            password: True
+
+        MDLabel:
+            text: "Tell us a bit about yourself"
+            font_name: "BPoppins"
+            font_size: "16sp"
+            pos_hint: {"center_x":.65, "center_y":.3}
+            color: rgba(135,133,193,255)
+
+        MagicButton:
+            text: "Let's Go"
+            size_hint: .66, .065
+            background_color: 0,0,0,0
+            font_name: "BPoppins"
+            pos_hint: {"center_x":.5, "center_y":.2}
+            on_release:
+                self.wobble()
+                root.manager.transition.direction = "left"
+                root.manager.current = "ability"

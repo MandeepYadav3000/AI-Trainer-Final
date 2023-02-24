@@ -1,0 +1,103 @@
+<Goal@MDScreen>
+
+    MDBoxLayout:
+
+        orientation: "vertical"
+
+        MDLabel:
+            font_style: "H6"
+            text: "What's your Goal?"
+            theme_text_color: "Custom"
+            text_color: "black"
+            halign: "center"
+            size_hint: (1,.5)
+            pos_hint: {'y': .85}
+
+        MDGridLayout:
+            cols: 2
+            spacing: "20dp"
+            padding: "10dp"
+
+            MDFillRoundFlatButton:
+                id: button 1
+                font_style: "Subtitle1"
+                text: "Lose Weight"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Gain Weight"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Stay Healthy"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Build Muscle"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Shaping"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Endurance"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Improving"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+            MDFillRoundFlatButton:
+                font_style: "Subtitle1"
+                text: "Flexibility"
+                size_hint_x: 0.5
+                text_color: "black"
+                md_bg_color: (142/255, 77/255, 182/255, 1)
+                on_press: self.md_bg_color = self.theme_cls.primary_color
+
+        MDFloatLayout:
+
+            MDRectangleFlatButton:
+                text: "Done"
+                font_style: "Button"
+                size_hint_x: .5
+                pos_hint: {"x": .25, "y": .60}
+                text_color: "black"
+                line_color: rgba(127,255,212,255)
+                md_bg_color: rgba(127,255,212,255)
+                on_press:
+                    root.manager.current = "screen_1"
+
+
+
+
+
+

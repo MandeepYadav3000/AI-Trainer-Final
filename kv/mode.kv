@@ -1,0 +1,67 @@
+<Mode@MDScreen>:
+
+    MDLabel:
+        text: "Choose your level"
+        font_name: "BPoppins"
+        font_size: "20dp"
+        pos_hint: {"center_x":.72,"center_y":.90}
+        color: rgba(0,0,0,255)
+
+    MDFillRoundFlatButton:
+        text: "Beginner"
+        font_name: "MPoppins"
+        text_color: "black"
+        font_size: "18dp"
+        pos_hint: {"center_x":.50,"center_y":.75}
+        size_hint_x: .85
+        size_hint_y: .17
+        md_bg_color: rgba(127,255,212,255)
+        on_release:
+            root.manager.transition.direction = "left"
+            root.manager.current = "goal_screen"
+    MDLabel:
+        text: "I rarely exercise & prefer low intensity"
+        font_name: "MPoppins"
+        font_size: "13dp"
+        pos_hint: {"center_x":.65,"center_y":.70}
+        color: rgba(128,128,128,255)
+
+
+    MDFillRoundFlatButton:
+        text: "Intermediate"
+        font_name: "MPoppins"
+        text_color: "black"
+        font_size: "18dp"
+        pos_hint: {"center_x":.50,"center_y":.50}
+        size_hint_x: .85
+        size_hint_y: .17
+        md_bg_color: rgba(127,255,212,255)
+        on_release:
+            root.manager.transition.direction = "left"
+            root.manager.current = "goal_screen"
+    MDLabel:
+        text: "I can do moderate workout"
+        font_name: "MPoppins"
+        font_size: "13dp"
+        pos_hint: {"center_x":.75,"center_y":.45}
+        color: rgba(128,128,128,255)
+
+
+    MDFillRoundFlatButton:
+        text: "Advanced"
+        font_name: "MPoppins"
+        text_color: "black"
+        font_size: "18dp"
+        pos_hint: {"center_x":.50,"center_y":.25}
+        size_hint_x: .85
+        size_hint_y: .17
+        md_bg_color: rgba(127,255,212,255)
+        on_release:
+            root.manager.transition.direction = "left"
+            root.manager.current = "goal_screen"
+    MDLabel:
+        text: "I have years of experience in workout"
+        font_name: "MPoppins"
+        font_size: "13dp"
+        pos_hint: {"center_x":.67,"center_y":.20}
+        color: rgba(128,128,128,255)
